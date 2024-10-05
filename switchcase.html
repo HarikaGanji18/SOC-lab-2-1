@@ -1,0 +1,45 @@
+<html>
+<head><title>switch case</title></head>
+<body>
+<script>
+var a;
+var b;
+var result;
+var operator;
+var operator=prompt("Enter arithemetic operator");
+const a=prompt(parseInt("Enter a value"));
+const b=prompt(parseInt("Enter b value"));
+switch(operator)
+{
+case  '+':
+result= a+b;
+var x=prompt("This is addition operator" +result);
+break;
+case  '-':
+result= a-b;
+alert("This is subtraction operator" +result);
+break;
+case  '*':
+result= a*b;
+alert("This is multiplication operator"+result);
+break;
+case  '/':
+result= a/b;
+alert("this is adivision operator"+result);
+break;
+case  '%':
+result= a%b;
+alert("this is modulo operator"+result);
+break;
+case  '++':
+result= ++a;
+alert("this is increment operator"+result);
+break;
+case  '--':
+result= --a;
+alert("this is decrement operator"+result);
+break;
+}
+</script>
+</body>
+</html>

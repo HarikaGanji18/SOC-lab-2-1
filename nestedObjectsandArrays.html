@@ -1,0 +1,36 @@
+<html>
+<head><title> NESTED OBJECTS AND ARRAYS</title></head>
+<body>
+<h3>NESTED OBJECTS AND ARRAYS</h3>
+<p id="sample1"> </p>
+<script>
+let h=" ";
+const details={
+collegeName: "Giet",
+year: "2023-2026",
+info: [{
+ name: "<li>"+ "pooja"  +"</li>",place:["viz","hyd","ydt","dc"]
+},
+{
+name: "<li>"+ "kavya" +"</li>",place:["viz","dc","rjy","ydt"]
+},
+{
+name: "<li>"+ "harika"+ "</li>",place:["viz","kkd","dc","rjy"]
+}
+]
+};
+for(let i in details.info)
+{
+h+="<h5>" +details.info[i].name + "</h5>"
+ for(let j in details.info[i].place)
+ {
+  h+="<h5>" +details.info[i].place[j] + "</h5>"
+ }
+}
+document.getElementById("sample1").innerHTML=h;
+</script>
+</body>
+</html>
+
+
+

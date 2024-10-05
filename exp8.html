@@ -1,0 +1,54 @@
+<html>
+<head><title> OBJECTS and ARRAYS </title></head>
+<body>
+<h2>//OBJECTS//</h2>
+<pre>
+<script>
+const animals={
+  breed: "Siberian Husky",
+  color: "BlackandWhite",
+  price: 50000
+};
+document.writeln(animals.breed);
+document.writeln(animals["color"]);
+let h = "price";
+document.writeln(animals[h]);
+
+</script>
+</pre>
+
+<h3>NESTED OBJECTS</h3>
+<pre>
+<script>
+const myinfo = { 
+  name: "Harika", 
+  age: 19, 
+  address: { dn0: "1-555", city: "Rajahmundry", street: "sadhupeta", pincode: 533296 },
+  village: "Diwancheruvu"
+};
+document.writeln(myinfo.address.pincode);
+document.writeln(myinfo.village);
+document.writeln(myinfo.address["city"])
+let x="address";
+let y="street";
+document.writeln(myinfo[x][y]);
+
+</script>
+</pre>
+
+<h3>USING LOOP</h3>
+<pre>
+<script>
+let h=" ";
+for(let x in animals)
+{
+  h+=animals[x];
+  h+=(" ");
+}
+document.writeln(h);
+
+</script>
+</pre>
+
+</body>
+</html>

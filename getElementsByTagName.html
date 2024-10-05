@@ -1,0 +1,19 @@
+
+<html>
+<body>
+<h2>Document object getElementsByTagName()</h2>
+<ul>
+<li>Chocolate</li>
+<li>Vanilla</li>
+<li>Strawberry</li>
+<li>butterscotch</li>
+<li>BlackCurrant</li>
+<li>RedVelvet</li>
+</ul>
+<p id="sample"></p>
+<script>
+const group= document.getElementsByTagName("li"); 
+document.getElementById("sample").innerHTML = group[2].innerHTML;
+</script>
+</body>
+</html>

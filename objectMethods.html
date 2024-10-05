@@ -1,0 +1,19 @@
+<html>
+<head><title></title></head>
+<body>
+<h3>OBJECT METHODS</h3>
+<p id="sample"> </p>
+<pre>
+<script>
+const employee={
+   Fname: "suriya",
+   Lname: "sivakumar",
+   fullName: function(){
+          return (this.Fname + " " + this.Lname).toUpperCase();21
+   }
+};
+document.getElementById("sample").innerHTML = employee.fullName();
+</script>
+</pre>
+</body>
+</html>

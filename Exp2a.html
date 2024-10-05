@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>Internal JavaScript</title>
+<style>
+h2
+{
+box-sizing:border-box;
+width:350px;
+height:200px;
+background-color:cyan;
+color:black;
+margin:auto;
+font-size:20px;
+text-align:center;
+padding:30px;
+}
+</style>
+</head>
+<body>
+<h2 class="external">Hello!!</h2>
+<script>
+let h2=document.querySelector(".external");h2.addEventListener("mouseenter",function(e)
+{
+h2.innerText="Welcome to Javascript programming";
+}
+);
+</script>
+</body>
+</html> 

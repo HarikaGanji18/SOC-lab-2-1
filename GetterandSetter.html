@@ -1,0 +1,32 @@
+<html>
+<head><title></title></head>
+<body>
+<h3>GETTER AND SETTER METHODS IN OBJECT</h3>
+<pre>
+<script>
+const student1 = {
+  name: "harika",
+  age: 19,
+  _city: "Rajahmundry",
+  get city() {
+    return this._city;
+  }
+};
+
+document.writeln(student1.city); 
+
+const student2 = {
+  name: "harika",
+  age: 19,
+  _city: "", 
+  set city(value) {
+    this._city = value;
+  }
+};
+
+student2.city = "Kakinada"; 
+document.writeln(student2._city);
+</script>
+</pre>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<html>
+<head>
+<title> Window object confirm() method </title>
+</head>
+<body>
+<script>
+function disp()
+{
+ var s=confirm("Do you want to save this document");
+ if(s==true)
+{
+alert("Document saved successfully")
+}
+else
+{
+alert("Not saved")
+}
+}
+</script>
+<input type="button" value="Click" onclick="disp()"/>
+</body>
+</html>

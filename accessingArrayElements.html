@@ -1,0 +1,19 @@
+<html>
+<head>
+<title>ARRAYS</title>
+</head>
+<body>
+<h2>Accessing Array Elements</h2>
+<p id="sample"></p>
+<script>
+let h="<ul>"
+const places=["Rajahmundry","Kakinada","Hyderabad"]; 
+for(let i=0;i<places.length;i++)
+{
+h+="<h3>"+"<li>"+places[i]+"</li>"+"</h3>";
+}
+h+="</ul>" 
+document.getElementById("sample").innerHTML=h;
+</script>
+</body>
+</html>
